@@ -7,6 +7,9 @@
   <!--Local backup jQuery-->
   <script>window.jQuery || document.write('<script src="/Users/danielfredriksson/Documents/GitHub/weatherMeSoftly.js"><\/script>')</script>
   <meta charset="UTF-8">
+  <!--JS document-->
+  <script type="text/javascript" src="wikipeekia.js"></script>
+
   <title>Wikipeekia</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!--Google font-->
@@ -23,43 +26,44 @@
 
   <div class="container-fluid text-center">
 
-  <p class="wikiText" id="titleText">Wikipeekia</p>
+    <p class="wikiText" id="titleText">Wikipeekia</p>
 
-  <div id="lineDiv">
-    <span id="gradLine"></span>
-  </div>
+    <div class="lineDiv">
+      <span class="gradLine"></span>
+    </div>
 
-  <input id="searchForm" type="text" placeholder="-Search for an article-"></input>
-  <br>
-  <button id="submitBox"></button>
-  <br>
-
-  <div id="outpitDivs">
-    <div id="output1" class=""></div>
+    <input id="searchForm" type="text" placeholder="-Search for an article-"></input>
     <br>
-    <div id="output2" class=""></div>
+    <button id="submitBox"></button>
     <br>
-    <div id="output3" class=""></div>
-    <br>
-    <div id="output4" class=""></div>
-    <br>
-    <div id="output5" class=""></div>
-  </div>
 
-  <br>
-  <p class="wikiText" id="randomText">-Open random article-</p>
-  <button id="randomBox"></button>
+    <!--Output-->
+    <div id="outputDivs">
+        <!--div as article boxes-->
+      <div id="output1" class="container-fluid">
+        <h4 id="artTitle1" class="articleHeader"></h4>
+      </div>
+      <!--span to add <br> between boxes when button is clicked.-->
+        <span class="outputSpans"></span>
+        <div id="output2" class=""></div>
+        <span class="outputSpans"></span>
+        <div id="output3" class=""></div>
+        <span class="outputSpans"></span>
+        <div id="output4" class=""></div>
+        <span class="outputSpans"></span>
+        <div id="output5" class=""></div>
+      </div>
 
-</div>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+      <br>
+      <p class="wikiText" id="randomText">-Open random article-</p>
+      <button id="randomBox"></button>
 
+      <div class="lineDiv">
+        <span class="gradLine"></span>
+      </div>
 
-
-    <script  src="js/index.js"></script>
-
-
-
-
-</body>
+      <p style="font-size: 10px; color: white;">By <a href="https://twitter.com/lemidan">Daniel Fredriksson</a></p>
+    </div>
+  </body>
 
 </html>

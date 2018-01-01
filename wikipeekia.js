@@ -6,21 +6,28 @@ $(document).ready(function() {
     var textInput = $("#searchForm").val();
     //Access API.
     $.getJSON("https://en.wikipedia.org/w/api.php?action=opensearch&datatype=json&limit=5&search="+textInput+"&callback=?",
-    function(data) {
+    function (data) {
       //Store return values in separate arrays for simplicity
       var searchTerm = data[0];
       var articleTitles = data[0, [1]];
       var articleText = data[0, [2]];
       var articleLinks = data[0, [3]];
       //Output into HTML elements.
-      $
-      
-        /* $("#usuallyRefersOutPut").html("<p>"+data[0 [1 [0]]]+"</p>"); */
-      //Iterate over data.length() and match same numbers into one var.
-      //Create elements for vars to $. 
-      //New layout with list. searchBox become frame?
+      //Starting with adding text-boxes.
+      $("#output1").addClass("articleBox animated zoomIn");
+      $("#output2").addClass("articleBox animated zoomIn");
+      $("#output3").addClass("articleBox animated zoomIn");
+      $("#output4").addClass("articleBox animated zoomIn");
+      $("#output5").addClass("articleBox animated zoomIn");
+      $(".outputSpans").html("<br>");
+
+
+      /*function outPutFunc (output) {
+
       }
-    );
+      */
+
+      });
   });
 });
 //Open random article in a new window.
