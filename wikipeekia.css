@@ -1,0 +1,91 @@
+body {
+  background-color: #3d3d3d;
+}
+
+.wikiText {
+  color: white;
+  font-family: 'Berkshire Swash', sans serif;
+  font-size: 20px;
+}
+
+#titleText {
+  font-size: 40px;
+  margin-top: 10%;
+}
+
+#lineDiv{
+  margin-top:20px;
+  margin-bottom: 30px;
+}
+#gradLine{ 
+  display:block;
+  border:none;
+  color:white;
+  height:1px;
+  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#fff), to(#3d3d3d));
+}
+
+input[type=text], textarea {
+  font-family: 'Berkshire Swash', sans serif;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  outline: none !important;
+  border: none;
+  padding: 5px;
+  margin-bottom: 10px;
+  background-color: #3d3d3d;
+}
+#submitBox {
+  width: 40px;
+  height: 40px;
+  background-color: #c13232;
+  border: none;
+  outline: none !important;
+  margin-top: auto;
+  margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  -webkit-transition: 3s;
+  transition: 3s;
+  border-radius: 20%
+}
+#submitBox:hover {
+  background-color: #912e2e;
+  border:none;
+  outline: none !important;
+  -webkit-transition: 3s;
+  transition: 3s;
+  border-radius: 100%
+}
+
+#randomBox {
+  width: 40px;
+  height: 40px;
+  background-color: #4185f2;
+  border: none;
+  outline: none !important;
+  margin: auto;
+  -webkit-transition: 3s;
+  transition: 3s;
+  border-radius: 20%
+}
+#randomBox:hover {
+  background-color: #356dc6;
+  border:none;
+  outline: none !important;
+  -webkit-transition: 3s;
+  transition: 3s;
+  border-radius: 100%
+}
+
+.articleBox {
+  width: 80%;
+  max-width: 500px;
+  height: 100px;
+  margin: auto;
+  background-color: #666666;
+  border: none;
+  outline: none !important;
+  border-radius: 10px;
+}
