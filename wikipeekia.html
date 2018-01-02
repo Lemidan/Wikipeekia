@@ -1,57 +1,66 @@
 <!DOCTYPE html>
 <html lang="en" >
 
-<head>
-  <!--jQuery-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <!--Local backup jQuery-->
-  <script>window.jQuery || document.write('<script src="/Users/danielfredriksson/Documents/GitHub/weatherMeSoftly.js"><\/script>')</script>
-  <meta charset="UTF-8">
-  <!--JS document-->
-  <script type="text/javascript" src="wikipeekia.js"></script>
+  <head>
+    <!--jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--Local backup jQuery-->
+    <script>window.jQuery || document.write('<script src="/Users/danielfredriksson/Documents/GitHub/weatherMeSoftly.js"><\/script>')</script>
+    <meta charset="UTF-8">
+    <!--JS document-->
+    <script type="text/javascript" src="wikipeekia.js"></script>
 
-  <title>Wikipeekia</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!--Google font-->
-  <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
-  <!--jsdelivr animations-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
-  <!--Bootstrap-->
-  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css'>
-  <!--CSS stylesheet-->
-  <link rel="stylesheet" href="wikipeekia.css">
-</head>
+    <title>Wikipeekia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Google font-->
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+    <!--jsdelivr animations-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+    <!--Bootstrap-->
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css'>
+    <!--CSS stylesheet-->
+    <link rel="stylesheet" href="wikipeekia.css">
+  </head>
 
-<body>
+  <body>
 
-  <div class="container-fluid text-center">
+    <div class="container-fluid text-center">
 
-    <p class="wikiText" id="titleText">Wikipeekia</p>
+      <p class="wikiText" id="titleText">Wikipeekia</p>
 
-    <div class="lineDiv">
-      <span class="gradLine"></span>
-    </div>
-
-    <input id="searchForm" type="text" placeholder="-Search for an article-"></input>
-    <br>
-    <button id="submitBox"></button>
-    <br>
-
-    <!--Output-->
-    <div id="outputDivs">
-        <!--div as article boxes-->
-      <div id="output1" class="container-fluid">
-        <h4 id="artTitle1" class="articleHeader"></h4>
+      <div class="lineDiv">
+        <span class="gradLine"></span>
       </div>
-      <!--span to add <br> between boxes when button is clicked.-->
+
+      <input id="searchForm" type="text" placeholder="-Search article-"></input>
+      <br>
+      <button id="submitBox"></button>
+
+      <!--Output-->
+      <div id="outputDivs">
+        <!--div as article boxes-->
+        <div id="output1" class="container-fluid">
+          <p id="artTitle1" class="articleTitleOutput"></p>
+          <p id="artText1" class="articleTextOutput"><p>
+          <p id="artLink1" class="articleLinkOutput"></p>
+        </div>
+        <!--span to add <br> between boxes when button is clicked.-->
         <span class="outputSpans"></span>
-        <div id="output2" class=""></div>
+
+        <div id="output2" class="">
+          <p id="artTitle2" class="articleTitleOutput"></p>
+          <p id="artText2" class="articleTextOutput"><p>
+          <p id="artLink2" class="articleLinkOutput"></p>
+        </div>
         <span class="outputSpans"></span>
-        <div id="output3" class=""></div>
+
+        <div id="output3" class="">
+          <p id="artTitle3" class="articleTitleOutput"></p>
+          <p id="artText3" class="articleTextOutput"><p>
+          <p id="artLink3" class="articleLinkOutput"></p>
+        </div>
         <span class="outputSpans"></span>
-        <div id="output4" class=""></div>
-        <span class="outputSpans"></span>
-        <div id="output5" class=""></div>
+
       </div>
 
       <br>
